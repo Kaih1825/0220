@@ -14,14 +14,15 @@ class News extends StatefulWidget {
 
 class _NewsState extends State<News> with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  var tabs = [ListView_na(), ListView_dis(), ListView_int()];
-  var currentTab=0;
+  var currentTab = 0;
+  late List tabs;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _tabController = TabController(vsync: this, length: 3);
+    tabs = [ListView_na(), ListView_dis(), ListView_int()];
   }
 
   @override
@@ -61,6 +62,15 @@ class _NewsState extends State<News> with SingleTickerProviderStateMixin {
                         child: Image.asset("res/Logo_ro.png"),
                       )),
                       Align(
+                        alignment: Alignment.topRight,
+                        child: IconButton(
+                          icon: Icon(Icons.star,color: Colors.white,),
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/star');
+                          },
+                        ),
+                      ),
+                      Align(
                         alignment: Alignment.bottomCenter,
                         child: Container(
                           color: Colors.transparent,
@@ -72,7 +82,7 @@ class _NewsState extends State<News> with SingleTickerProviderStateMixin {
                             labelColor: Colors.white,
                             onTap: (value) {
                               setState(() {
-                                currentTab=value;
+                                currentTab = value;
                               });
                             },
                             tabs: const [
@@ -95,7 +105,7 @@ class _NewsState extends State<News> with SingleTickerProviderStateMixin {
           ];
         },
         body: Padding(
-          padding: const EdgeInsets.only(top:0,left: 10,right: 10),
+          padding: const EdgeInsets.only(top: 0, left: 10, right: 10),
           child: tabs[currentTab],
         ),
       ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:s2/Screens/Competitions.dart';
 import 'package:s2/Screens/News.dart';
 import 'package:s2/Screens/Skills.dart';
+import 'package:s2/Screens/StarNews.dart';
 import 'Screens/HomeScreen.dart';
 import 'Values/Colors.dart';
 
@@ -33,7 +34,8 @@ class MyApp extends StatelessWidget {
         '/home':(context) =>const HomeScreen(),
         '/news':(context) => const News(),
         '/competitions':(context) => const Competitions(),
-        '/skills':(context) => const Skills()
+        '/skills':(context) => const Skills(),
+        '/star':(context) => const StarNews(),
       },
     );
   }
