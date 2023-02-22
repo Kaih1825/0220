@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   var _pageController = new PageController(initialPage: 999);
   var dotColor = [Colors.grey.shade500, Colors.white, Colors.white];
   var images = ["res/news/01.jpg", "res/news/02.png", "res/news/03.jpg"];
-  var nowPage=999;
+  var nowPage = 999;
 
   @override
   void dispose() {
@@ -30,9 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
     // TODO: implement initState
     super.initState();
     Timer.periodic(Duration(seconds: 3), (timer) {
-      _pageController.animateToPage(nowPage+1, duration: Duration(milliseconds: 500),curve: Curves.decelerate);
-     });
-    
+      _pageController.animateToPage(nowPage + 1,
+          duration: Duration(milliseconds: 500), curve: Curves.decelerate);
+    });
   }
 
   @override
@@ -40,16 +40,15 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         appBar: AppBar(title: Text("主畫面")),
         drawer: drawer(
-          context,
-          List.of([
-            Colors.blue,
-            Colors.black,
-            Colors.black,
-            Colors.black,
-          ]),
-          '/home',
-          '/home'
-        ),
+            context,
+            List.of([
+              Colors.blue,
+              Colors.black,
+              Colors.black,
+              Colors.black,
+            ]),
+            '/home',
+            '/home'),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(left: 8, right: 8),
@@ -77,11 +76,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Stack(children: [
                     PageView.builder(
                       itemBuilder: (context, index) {
-                        return Image.asset(images[index % 3]);
+                        return Padding(
+                          padding: const EdgeInsets.all(8),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(30),
+                            child: Image.asset(images[index % 3]),
+                          ),
+                        );
                       },
                       onPageChanged: (value) {
                         setState(() {
-                          nowPage=value;
+                          nowPage = value;
                           for (int i = 0; i < 3; i++) {
                             dotColor[i] = Colors.white;
                           }
@@ -153,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
                   child: GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       Navigator.pushNamed(context, '/news');
                     },
                     child: ClipRRect(
@@ -183,7 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
                   child: GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       Navigator.pushNamed(context, '/competitions');
                     },
                     child: ClipRRect(
@@ -214,8 +219,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
                   child: GestureDetector(
                     onTap: () {
-                            Navigator.pushNamed(context, '/skills');
-                          },
+                      Navigator.pushNamed(context, '/skills');
+                    },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(30),
                       child: Stack(children: [

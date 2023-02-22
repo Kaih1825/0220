@@ -45,7 +45,6 @@ class _NewsState extends State<News> with SingleTickerProviderStateMixin {
                 backgroundColor: firstScreenBac,
                 collapsedHeight: 200,
                 expandedHeight: 400,
-                floating: true,
                 iconTheme: IconThemeData(color: Colors.white),
                 pinned: true,
                 shape: const RoundedRectangleBorder(
