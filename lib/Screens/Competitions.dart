@@ -21,13 +21,13 @@ class _CompetitionsState extends State<Competitions>
   void initState() {
     // TODO: implement initState
     super.initState();
-    _tabController = TabController(length: 5, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("各類技能競賽 Competitions")),
+      appBar: AppBar(title: Text("關於技能競賽 About")),
       drawer: drawer(
           context,
           List.of([

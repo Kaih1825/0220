@@ -38,7 +38,17 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("主畫面")),
+        appBar: AppBar(
+          title: Text("主畫面"),
+          actions: [
+            IconButton(
+              icon: Icon(Icons.add),
+              onPressed: () {
+                Navigator.pushNamed(context, '/parse');
+              },
+            )
+          ],
+        ),
         drawer: drawer(
             context,
             List.of([
@@ -49,6 +59,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ]),
             '/home',
             '/home'),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/parse');
+          },
+          child: Icon(Icons.add),
+        ),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(left: 8, right: 8),
@@ -204,7 +220,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
                           child: const Center(
                             child: Text(
-                              "各類技能競賽 Competitions",
+                              "關於技能競賽 About",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold),

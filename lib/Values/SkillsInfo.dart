@@ -1,4 +1,4 @@
-const skillImages=[
+const allSkillImages=[
 "https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221486150891.jpg" ,
 "https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221488553811.jpg" ,
 "https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221482970571.jpg" ,
@@ -70,9 +70,8 @@ const skillImages=[
 "https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221253123571.png" ,
 "https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221296694741.png" ,
 ];
-
-const skillNames=[
-  "01 工業機械",
+const allSkillNames=[
+"01 工業機械",
 "02 資訊網路布建",
 "03 集體創作",
 "04 機電整合",
@@ -143,3 +142,190 @@ const skillNames=[
 "J50 3D 數位遊戲藝術",
 "無人機操作",
 ];
+
+const skillsType1Text=[
+"01 工業機械",
+"03 集體創作",
+"04 機電整合",
+"05 CAD機械設計製圖",
+"06 CNC車床",
+"07 CNC銑床",
+"10 銲接",
+"16 電子",
+"19 工業控制",
+"23 機器人",
+"42 冷作",
+"43 模具",
+"45 外觀模型創作",
+"59 工業設計技術",
+"63 機器人系統整合",
+"73 板金",
+"74 鑄造",
+"75 應用電子",
+];
+
+const skillType1Img=[
+  "https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219055245230.jpeg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219676165690.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219692854300.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219712913700.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219725776900.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219736688710.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219880423350.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220161639510.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220191260660.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220277019270.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220964831190.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220995277140.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221009144920.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166116547317260.png__38335",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166116530975680.png__87886",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221125564760.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221134193250.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221143846310.jpg",
+];
+
+const skillsType2Text=["12 建築舖面",
+"15 配管與暖氣",
+"15 配管與暖氣",
+"18 電氣裝配",
+"20 砌磚",
+"21 粉刷技術與乾牆系統",
+"22 漆作裝潢",
+"24 家具木工",
+"25 門窗木工",
+"37 造園景觀",
+"38 冷凍空調",
+"58 數位建設BIM",];
+
+const skillsType2Img=["https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219933635870.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219972536470.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220182345180.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220226667150.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220238169190.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220246216520.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166115405380420.jpg__34514",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166115767511290.jpg__48481",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220916040220.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220926866970.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166116159158910.png__74317",];
+
+const skillType3Text=[
+  "02 資訊網路布建",
+"08 行動應用開發",
+"09 商務軟體設計",
+"17 網頁技術",
+"39 資訊與網路技術",
+"53 雲端運算",
+"54 網路安全",
+];
+
+const skillType3Img=[
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219646342020.png",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166849826712590.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219765487100.png",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220171314540.png",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220938578910.png",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221083426200.png",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221090162360.png",
+];
+
+const skillType4Text=[
+"13 汽車板金",
+"14 飛機修護",
+"33 汽車技術",
+"36 汽車噴漆",
+];
+
+const skillType4Img=[
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219952558360.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166219962735760.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220482833400.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166260712799220.jpg",
+];
+
+const skillType5Text=[
+"29 美髮",
+"30 美容",
+"32 西點製作",
+"34 西餐烹飪",
+"35 餐飲服務",
+"41 健康照顧",
+"47 麵包製作",
+"56 旅館接待",
+"71 中餐烹飪",
+];
+
+const skillType5Img=[
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220444051480.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220451678100.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220472450700.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220492762530.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220498281020.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220956275710.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221064576870.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221097650010.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221103678080.jpg",
+];
+
+const skillType6Text=[
+"27 珠寶金銀細工",
+"28 花藝",
+"31 服裝創作",
+"40 平面設計技術",
+"44 展示設計",
+"50 3D 數位遊戲藝術",
+"72 國服",
+];
+
+const skillType6Img=[
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221302242100.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220319838600.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220461384150.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166220947896030.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166849859585720.png",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221075881700.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221112445250.jpg",
+];
+
+const skillType7Text=[
+"J05 CAD機械設計製圖",
+"J09 商務軟體設計",
+"J16 電子",
+"J17 網頁技術",
+"J18 電氣裝配",
+"J19 工業控制",
+"J22 漆作裝潢",
+"J23 機器人",
+"J28 花藝",
+"J29 美髮",
+"J35 餐飲服務",
+"J40 平面設計技術",
+"J50 3D 數位遊戲藝術",
+];
+const skillType7Img=[
+  "https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221168592280.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221166488620.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221175534330.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221187828120.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221193637480.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221199358880.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221205144350.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221213142410.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221220275760.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221227666400.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221240322180.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221246098210.jpg",
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221253152910.png",
+];
+
+const skillType8Text=[
+  "無人機操作"
+];
+
+const skillType8Img=[
+"https://skillsweek.wdasec.gov.tw/skillsweek/uploads/jobs/166221296658300.png"
+];
+
+const skillImg=[allSkillImages,skillType1Img,skillsType2Img,skillType3Img,skillType4Img,skillType5Img,skillType6Img,skillType7Img,skillType8Img];
+const skillText=[allSkillNames,skillsType1Text,skillsType2Text,skillType3Text,skillType4Text,skillType5Text,skillType6Text,skillType7Text,skillType8Text];
